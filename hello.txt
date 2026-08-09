@@ -1,2 +1,2 @@
 Hello Git!
-This line was added on GitHub.
+This project is connected to GitHub.
