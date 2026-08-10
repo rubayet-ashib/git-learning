@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📥 fetchIT
+# fetchIT
 
 **A Bash-based command-line media downloader for Ubuntu Linux**
 
@@ -147,9 +147,3 @@ fetchIT/
 fetchIT is open-source software licensed under the [MIT License](LICENSE).
 
 ---
-
-<div align="center">
-
-Made with 🐧 for the command line
-
-</div>
