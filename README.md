@@ -2,9 +2,7 @@
 
 # fetchIT
 
-**A Bash-based command-line media downloader for Ubuntu Linux**
-
-Powered by the open-source [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) engine — supporting video, audio, and playlist downloads from thousands of websites.
+**A Bash-based command-line media downloader for Ubuntu Linux, powered by the open-source [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) engine — supporting video, audio, and playlist downloads from thousands of websites.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Platform](https://img.shields.io/badge/platform-Ubuntu%20Linux-orange)
@@ -18,6 +16,7 @@ Powered by the open-source [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) engine �
 ## Table of Contents
 
 - [Features](#features)
+- [Screenshots](#screenshots)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -41,6 +40,18 @@ Powered by the open-source [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) engine �
 | ⚙️ **Dependency Management** | Check for required dependencies and assist with their installation |
 | 💻 **Command-Line Interface** | Lightweight and fully terminal-based, with no graphical interface required |
 | 🐧 **Ubuntu Linux Support** | Designed specifically for Ubuntu-based Linux environments |
+
+---
+
+## Screenshots
+### Main Menu
+![Main Menu](screenshots/main_menu.png)
+### Video Details
+![Video Details](screenshots/video_details.png)
+### Downloaded Files
+![Downloaded Files](screenshots/downloaded_files.png)
+### Statistics
+![Statistics](screenshots/statistics.png)
 
 ---
 
@@ -71,13 +82,13 @@ cd fetchIT
 **2. Make the scripts executable**
 
 ```bash
-chmod +x main.sh config.sh
+chmod +x main.sh
 ```
 
 **3. Run fetchIT**
 
 ```bash
-./main.sh
+bash main.sh
 ```
 
 On the first run, fetchIT will check for its required dependencies and create the necessary runtime files and directories automatically.
@@ -89,7 +100,7 @@ On the first run, fetchIT will check for its required dependencies and create th
 After installation, start fetchIT from the project directory:
 
 ```bash
-./main.sh
+bash main.sh
 ```
 
 fetchIT provides an interactive command-line interface that guides you through the available download and management options.
@@ -112,22 +123,23 @@ Follow the prompts displayed in the terminal to select an operation and provide 
 ```
 fetchIT/
 ├── main.sh                 # Main entry point and application flow
-├── config.sh               # Configuration and runtime setup
-├── lib/
+├── modules/
+|   ├── config.sh           # Configuration and runtime setup
 │   ├── downloader.sh       # Media downloading functionality
 │   ├── history.sh          # Download history management
 │   ├── manager.sh          # Download/file management
 │   ├── stats.sh            # Download statistics
 │   └── ui.sh               # Command-line interface and UI functions
-├── downloads/               # Runtime directory for downloaded media
+├── downloads/              # Runtime directory for downloaded media
 │   ├── videos/
 │   ├── audios/
 │   └── playlists/
-├── history.csv              # Runtime download history
-├── .gitignore                # Files and directories excluded from Git
-├── LICENSE                    # MIT License
-├── README.md                  # Project documentation
-└── CHANGELOG.md               # Project version history
+├── screenshots/            # Sample screenshots
+├── history.csv             # Runtime download history
+├── .gitignore              # Files and directories excluded from Git
+├── LICENSE                 # MIT License
+├── README.md               # Project documentation
+└── CHANGELOG.md            # Project version history
 ```
 
 > **Note:** `history.csv` and the contents of `downloads/` are generated at runtime and are not included in the Git repository.
