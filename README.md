@@ -88,8 +88,12 @@ chmod +x main.sh
 **3. Run fetchIT**
 
 ```bash
-bash main.sh
+./main.sh
 ```
+> If you get a "permission denied" error, either run `chmod +x main.sh` first, or simply use:
+> ```bash
+> bash main.sh
+> ```
 
 On the first run, fetchIT will check for its required dependencies and create the necessary runtime files and directories automatically.
 
@@ -100,7 +104,7 @@ On the first run, fetchIT will check for its required dependencies and create th
 After installation, start fetchIT from the project directory:
 
 ```bash
-bash main.sh
+./main.sh
 ```
 
 fetchIT provides an interactive command-line interface that guides you through the available download and management options.
